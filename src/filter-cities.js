@@ -10,6 +10,7 @@ const allItems = cities.map((city, index) => ({
 // but it's fine with inline exports like this so that's what we're doing.
 export function getItems(filter) {
   if (!filter) {
+    // console.log(allItems)
     return allItems
   }
   return matchSorter(allItems, filter, {
