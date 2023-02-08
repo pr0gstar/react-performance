@@ -13,7 +13,7 @@ function Counter() {
 function App() {
   return (
     <div>
-      <React.Profiler onRender={reportProfile}>
+      <React.Profiler id="Counter" onRender={reportProfile}>
         <div>
           Profiled counter
           <Counter />
